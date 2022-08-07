@@ -18,7 +18,7 @@ module.exports = (_, config) => {
         return filename.substring(index);
       },
     },
-    ...(config.mode === 'development' ? { devtool: 'source-map' } : {}),
+    // ...(config.mode === 'development' ? { devtool: 'source-map' } : {}),
     module: {
       rules: [
         // videos
@@ -147,48 +147,9 @@ module.exports = (_, config) => {
       static: path.resolve(__dirname, 'backend/dist/public'),
     },
     optimization: {
-      minimizer: [
-        new UglifyJSPlugin({
-          uglifyOptions: {
-            compress: {
-              arrows: false,
-              booleans: false,
-              cascade: false,
-              collapse_vars: false,
-              comparisons: false,
-              computed_props: false,
-              hoist_funs: false,
-              hoist_props: false,
-              hoist_vars: false,
-              if_return: false,
-              inline: false,
-              join_vars: false,
-              keep_infinity: true,
-              loops: false,
-              negate_iife: false,
-              properties: false,
-              reduce_funcs: false,
-              reduce_vars: false,
-              sequences: false,
-              side_effects: false,
-              switches: false,
-              top_retain: false,
-              toplevel: false,
-              typeofs: false,
-              unused: false,
-              conditionals: true,
-              dead_code: true,
-              evaluate: true,
-            },
-            mangle: true,
-          },
-          parallel: true,
-          cache: true,
-        }),
-      ],
-      // splitChunks: {
-      //   chunks: 'all',
-      // },
+      splitChunks: {
+        chunks: 'all',
+      },
     },
   };
 };

@@ -1,6 +1,11 @@
 import express from 'express';
 import { join } from 'path';
 
+
+
+
+
+
 const app = express();
 
 app.get(/.(js|svg)/, express.static(join(__dirname, 'public')));

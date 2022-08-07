@@ -38,15 +38,7 @@ const Header: FunctionComponent = () => {
         <List sx={{ display: 'flex' }}>
           <ListItem>
             <MuiLink component={Link} to={'/explore'}>
-              <ListItemText>
-                <Typography variant="underline">Exploress ds dsd </Typography>
-              </ListItemText>
-            </MuiLink>
-          </ListItem>
-          <ListItem>
-            sdfds
-            <MuiLink component={Link} to={'/'}>
-              <Typography variant="underline">individuals</Typography>
+              <ListItemText> d f s dsa d sad sadg</ListItemText>
             </MuiLink>
           </ListItem>
         </List>
