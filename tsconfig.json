@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "paths": {
+      "@Pages/*": ["./frontend/src/pages/*"],
+      "@Services/*": ["./frontend/src/services/*"],
+      "@Components/*": ["./frontend/src/Components/*"],
+      "@Interfaces/*": ["./frontend/src/interfaces/*"],
+      "@Helpers/*": ["./frontend/src/helpers/*"],
+      "@Hooks": ["./frontend/src/hooks/index.ts"],
+      "@Utils/*": ["./frontend/src/utils/*"],
+      "@Images/*": ["./frontend/src/assets/images/*"],
+      "@Videos/*": ["./frontend/src/assets/videos/*"]
+    }
+  },
+  "include": ["./frontend/src"]
+}
